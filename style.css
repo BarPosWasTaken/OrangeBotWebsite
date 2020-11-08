@@ -7,7 +7,9 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #101010;
+    background: url(https://i.imgur.com/DocRwyB.jpg) repeat;
+    -webkit-animation: scroll 60s linear infinite;
+    animation: scroll 60s linear infinite;
     color: #f1f1f1;
     font-family: 'Roboto', sans-serif;
 }
@@ -16,6 +18,7 @@ body{
 }
 hr{
     width: 80px;
+    color: #f1f1f1;
 }
 .content{
     width: fit-content;
@@ -26,4 +29,12 @@ hr{
 }
 a{
     color: #f1f1f1;
+}
+@keyframes scroll{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2160px -2160px;
+    }
 }
